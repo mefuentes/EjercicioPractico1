@@ -1,13 +1,23 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ListaPeliculasComponent } from './componentes/lista-peliculas/lista-peliculas.component';
+import { DetallePeliculaComponent } from './componentes/detalle-pelicula/detalle-pelicula.component';
+import { Pelicula } from './servicios/pelicula.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [ListaPeliculasComponent, DetallePeliculaComponent],
+  template: `
+    <div>
+      <app-lista-peliculas (peliculaSeleccionada)="manejarSeleccionPelicula($event)"></app-lista-peliculas>
+      <app-detalle-pelicula (pelicula)="peliculaSeleccionada"></app-detalle-pelicula>
+    </div>
+  `
 })
 export class AppComponent {
-  title = 'ejercPratico1';
+  peliculaSeleccionada: Pelicula | null = null;
+
+  manejarSeleccionPelicula(pelicula: Pelicula) {
+    this.peliculaSeleccionada = pelicula;
+  }
 }

@@ -1,0 +1,39 @@
+{
+    "peliculas": [
+      {
+        "id": 1,
+        "titulo": "Origen",
+        "sinopsis": "Un ladrón especializado en robar secretos mediante el uso de la tecnología de los sueños es reclutado para realizar una tarea muy peligrosa: implantar una idea en la mente de una persona.",
+        "anio": 2010,
+        "calificacion": 5
+      },
+      {
+        "id": 2,
+        "titulo": "El Caballero Oscuro",
+        "sinopsis": "Batman se enfrenta al Joker, un criminal psicópata que busca sembrar el caos en Gotham City.",
+        "anio": 2008,
+        "calificacion": 5
+      },
+      {
+        "id": 3,
+        "titulo": "Matrix",
+        "sinopsis": "Un hacker descubre que la realidad en la que vive es una simulación creada por máquinas, y se une a un grupo de rebeldes para liberar a la humanidad.",
+        "anio": 1999,
+        "calificacion": 4
+      },
+      {
+        "id": 4,
+        "titulo": "Interstellar",
+        "sinopsis": "Un grupo de astronautas viaja a través de un agujero de gusano en el espacio en un intento de salvar a la humanidad de la extinción.",
+        "anio": 2014,
+        "calificacion": 4
+      },
+      {
+        "id": 5,
+        "titulo": "Sueños de libertad",
+        "sinopsis": "Dos hombres prisioneros en la misma cárcel forman una profunda amistad a lo largo de los años, encontrando consuelo y redención en su relación.",
+        "anio": 1994,
+        "calificacion": 5
+      }
+    ]
+  }
